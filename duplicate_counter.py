@@ -7,10 +7,10 @@ output_file = "output.txt"
 with open(input_file, 'r') as file:
     data = file.read().splitlines()
 
-# Zlicz wystąpienia danych
+# Liczy wystąpienia danych
 data_count = Counter(data)
 
-# Wybierz dane, które występują tylko raz
+# Wybieranie danych, które występują tylko raz
 unique_data = [d for d in data if data_count[d] == 1]
 
 for d in unique_data:
